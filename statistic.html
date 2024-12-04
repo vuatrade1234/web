@@ -8,12 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Điều chỉnh kích thước logo */
+        .inner-logo img {
+            width: 60px; /* Đặt kích thước logo theo nhu cầu */
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="inner-logo">
             <a href="./index.html">
-                <img src="https://vinfastauto.com/themes/porto/img/logo-mobile.svg" alt="Logo" srcset="">
+                <img src="logo.jpg" alt="Logo" srcset="">
             </a>
         </div>
         <div class="inner-user">
@@ -25,7 +31,7 @@
                 <div class="avatar">
                     <i class="fa-solid fa-user"></i>
                 </div>
-                <span>Admin</span>
+                <span>Mr.Nghĩa</span>
             </div>
         </div>
     </header>
@@ -72,13 +78,13 @@
                         <div class="col-4">
                             <div class="form-group">
                                 <label for="date-start">Thời gian bắt đầu</label>
-                                <input class="form-control" type="date" value="2024-01-20" name="date-start" id="date-start">
+                                <input class="form-control" type="date" value="2024-01-01" name="date-start" id="date-start">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="form-group">
                                 <label for="date-end">Thời gian kết thúc</label>
-                                <input class="form-control" type="date" value="2024-02-20" name="date-end" id="date-end">
+                                <input class="form-control" type="date" value="2024-01-02" name="date-end" id="date-end">
                             </div>
                         </div>
                     </div>
@@ -101,50 +107,143 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Winner</td>
-                    <td class="table_inner-img">
-                        <img src="../img/product01.png" alt="" srcset="">
+                    <td>HONDA AIR BLADE 125 2025 ĐẶC BIỆT</td>
+                    <td class="">
+                        <img src="sp.jpg" alt="" srcset="" width="45" height="auto">
                     </td>
-                    <td>10.000 VND</td>
+                    <td>46.690.000 VND</td>
                     <td>12</td>
-                    <td>120.000 VND</td>
+                    <td>560.280.000 VND</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Winner</td>
+                    <td>HONDA SH MODE 125 2024</td>
                     <td class="table_inner-img">
-                        <img src="" alt="" srcset="">
+                        <img src="https://hondathanhbinhan.com/wp-content/uploads/2024/04/sh-mode-125-2024-cao-cap-do-den.png" alt="" srcset="">
                     </td>
-                    <td>10.000 VND</td>
+                    <td>87.990.000 VND</td>
                     <td>12</td>
-                    <td>120.000 VND</td>
+                    <td>1.055.880.000 VND</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>SH</td>
+                    <td>HONDA WAVE RSX 2024</td>
                     <td class="table_inner-img">
-                        <img src="../img/product03.png" alt="" srcset="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUMYcDjp-i_pEvWPSqyQmNrIFKFszpRIkLHg&s" alt="" srcset=""/>
                     </td>
-                    <td>10.000 VND</td>
+                    <td>21.750.000 VND</td>
                     <td>12</td>
-                    <td>120.000 VND</td>
+                    <td>261.000.000 VND</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>sản phẩm test</td>
+                    <td>YAMAHA GRANDE 2024</td>
                     <td class="table_inner-img">
-                        <img src="../img/product04.png" alt="" srcset="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq-AVHXW9foO2slyA_1sot2vTiI6nsdXu-Aw&s" alt="" srcset=""/>
                     </td>
-                    <td>10.000 VND</td>
+                    <td>27.890.000 VND</td>
                     <td>12</td>
-                    <td>120.000 VND</td>
+                    <td>334.680.000 VND</td>
                 </tr>
             </tbody>
         </table>
+    
+        <!-- Di chuyển bảng "Người mua hàng nhiều nhất" lên trước phân trang -->
+        <h4>Người mua hàng nhiều nhất</h4>
+        <table class="table table-hover table-bordered text-center">
+            <thead class="bg-info">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên người mua</th>
+                    <th>Tổng số đơn hàng</th>
+                    <th>Chi tiết hóa đơn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Trung Nghĩa</td>
+                    <td>5</td>
+                    <td><a href="./order-detail.html?buyer_id=1" class="btn btn-primary">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nguyễn Văn Lộc</td>
+                    <td>2</td>
+                    <td><a href="./order-detail.html?buyer_id=1" class="btn btn-primary">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tạ Thị Linh</td>
+                    <td>2</td>
+                    <td><a href="./order-detail.html?buyer_id=1" class="btn btn-primary">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Nguyễn Xuân Khánh</td>
+                    <td>2</td>
+                    <td><a href="./order-detail.html?buyer_id=1" class="btn btn-primary">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bùi Văn Cương</td>
+                    <td>2</td>
+                    <td><a href="./order-detail.html?buyer_id=1" class="btn btn-primary">Xem chi tiết</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    <h4>Danh sách sản phẩm bán chạy nhất</h4>
+        <table class="table table-hover table-bordered text-center">
+            <thead class="bg-success">
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Hình ảnh</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng tiền</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>HONDA WINNER X 2024</td>
+                    <td class="table_inner-img">
+                        <img src="https://hondathanhbinhan.com/wp-content/uploads/2024/01/winner-x-2024.png" alt="" srcset="">
+                    </td>
+                    <td>46.690.000 VND</td>
+                    <td>12</td>
+                    <td>560.280.000 VND</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Danh sách sản phẩm bán ế nhất</h4>
+        <table class="table table-hover table-bordered text-center">
+            <thead class="bg-success">
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Hình ảnh</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng tiền</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>YAMAHA GRANDE 2024</td>
+                    <td class="table_inner-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq-AVHXW9foO2slyA_1sot2vTiI6nsdXu-Aw&s" alt="" srcset="">
+                    </td>
+                    <td>27.890.000 VND</td>
+                    <td>12</td>
+                    <td>334.680.000 VND</td>
+                </tr>
+            </tbody>
+        </table>
+
         <div class="inner-pagination">
             <ul class="pagination">
                 <li class="page-item ">
-                    <a href="./statistic.html" class="page-link"><<</a>
+                    <a href="./statistic.html" class="page-link"></a>
                 </li>
                 <li class="page-item active">
                     <a href="./statistic.html" class="page-link">1</a>
@@ -160,17 +259,5 @@
                 </li>
             </ul>
         </div>
-        <p>Tổng tiền thu được :
-            <strong>150.000.000 VND</strong>
-        </p>
-        <ul >Top 5 mặt hàng bán chạy :
-            <li>Winner</li>
-            <li>SH</li>
-            <li>Exciter</li>
-            <li>Janus</li>
-            <li>Lead</li>
-        </ul>
-        
-    </div>
-</body>
-</html>
+
+       
